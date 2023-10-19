@@ -19,8 +19,7 @@ Line 18: .render function is used to inject the react code into HTML.
 
 Line 18: When we do React.createElement what will be stored in heading? Is it just a h1 element?
 When we write React.createElement, a React element is created which is a Javascript Object. So, heading is a react element. 
-When we assign those tags, attributes and content to the heading element, it is not a HTML tag/element yet. The ".render" function in Line 18 converts the heading to h1 tag as HTML code under the root node. This is what
-happens behind the scenes.
+When we assign those tags, attributes and content to the heading element, it is not a HTML tag/element yet. The ".render" function in Line 18 converts the heading to h1 tag as HTML code under the root node. This is what happens behind the scenes.
 
 
 How to create the nested element structure using React JS?
@@ -33,4 +32,42 @@ Let's say we want the below structure:
 
 As we have 3 attributes for createElement method in react, for the 3rd attribute we give the children which should be under that particular tag. So here we need another div tag with the id: child. So we give that. Again under that we need a h1 tag, which goes in the 3rd attribute of the child div element and so on.
 
+We can see the HTML structure we wanted below here:
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/a9d2adc0-f543-430a-8623-4e1367f4d637)
+
+
+
+What if we want to create siblings in the nested structure?
+We can convert the 3rd attribute to an array.
+
+So here we've just put the child attribute(3rd attribute) of the child div element in an array.
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/17564fc2-8b2f-4b14-b069-1faf27c0d8b5)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c7fc12c3-c483-4fea-92fd-aa34f20e73ae)
+
+
+But what if we need, 2 sibling children tags under the parent tag. Should we put those 2 children in an array for the parent div's child attribute? like below.
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/44bc8da6-0e7a-44f2-8ad5-40162cad574e)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/3211539c-000d-4c43-a095-0c777d918cbe)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/65daec7b-1620-44ad-9040-69290867f889)
+
+It makes the code look long and messy. We will need to create more complex nested structures when we move forward. So for this JSX helps in this place when we need to create multiple tags/elements. We will be using React inside JSX.
+
+
+Next is, if we try having a h1 in html file under root and render the same content we've rendered now. Content in html file gets replaced by the content we rendered using React.
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ec87111a-e003-4b5f-aa17-5a75e39a3503)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b574d782-bc0c-42fd-b3f7-7c83859236fd)
+
+To prevent this we can render the React content in a separate container i.e under a different div. Here it is "react-container".
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c7f55222-f655-4285-993d-ecfb7696c840)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/0d7291b7-5712-46a9-b1f9-2ac54f29644d)
+
+
