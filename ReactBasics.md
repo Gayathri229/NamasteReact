@@ -9,7 +9,7 @@ React works for web browsers (React) and for Mobile devices (React Native). So t
 
 My First React Code:
 
-Line 16: createElement in React takes 3 arguments: tag we need to create, an object (will come to this later), the content we need inside the tag.
+Line 16: createElement in React takes 3 arguments: tag we need to create, an object where we can specify the attributes we want to give to the tag, the content we need inside the tag.
 Line 17: We need a root element in which the React application will be rendered in our HTML document. We've used ReactDOM object as it is going to be a DOM manipulation. We've mentioned here which html element will 
 act as the root.
 Line 18: .render function is used to inject the react code into HTML.
