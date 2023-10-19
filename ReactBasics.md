@@ -1,4 +1,4 @@
-Why do we two CDN urls to include react libraries in our code?
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c14f9296-41f6-45aa-ae01-cdefbf9d1beb)Why do we two CDN urls to include react libraries in our code?
 
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -6,7 +6,7 @@ Why do we two CDN urls to include react libraries in our code?
 First one is the core React library. Second one acts as a bridge for DOM manipulations. 
 React works for web browsers (React) and for Mobile devices (React Native). So to support these web operations and to connect to the DOM we have used react dom url in the code as well.
 
-REACT JS IS A LIBRARY.
+REACT JS IS A LIBRARY, NOT A FRAMEWORK.
 
 My First React Code:
 
@@ -58,16 +58,18 @@ But what if we need, 2 sibling children tags under the parent tag. Should we put
 It makes the code look long and messy. We will need to create more complex nested structures when we move forward. So for this JSX helps in this place when we need to create multiple tags/elements. We will be using React inside JSX.
 
 
-Next is, if we try having a h1 in html file under root and render the same content we've rendered now. Content in html file gets replaced by the content we rendered using React.
+Next is, if we try having a h1 in html file under root and render the same content we've rendered now. Content in html file gets REPLACED by the content we rendered using React.
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ec87111a-e003-4b5f-aa17-5a75e39a3503)
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b574d782-bc0c-42fd-b3f7-7c83859236fd)
 
-To prevent this we can render the React content in a separate container i.e under a different div. Here it is "react-container".
+To prevent this we can render the React content in a separate container i.e under a different div [react-container] and separate it from the root that we set for React[root]. This means react renders only under the root that we set for it.
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c7f55222-f655-4285-993d-ecfb7696c840)
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/0d7291b7-5712-46a9-b1f9-2ac54f29644d)
 
+
+Since React is a library, we can use it even in an already existing app to build a small part of the application(which was not built using React already) as well. We can create a large-scale application also using React.
 
