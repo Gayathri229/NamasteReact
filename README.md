@@ -1,2 +1,0 @@
-# NamasteReact
-NamasteReact
