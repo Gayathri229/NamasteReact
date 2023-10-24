@@ -1,4 +1,4 @@
-1. What is Emmet?
+1. What is Emmet?  
   Emmets are shortcuts that we can use while coding in Vscode.  We type in an abbreviation and Vscode converts it into a line/block of code for us.
 
 2. Difference between library and framework.
