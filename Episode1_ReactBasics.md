@@ -73,3 +73,29 @@ To prevent this we can render the React content in a separate container i.e unde
 
 Since React is a library, we can use it even in an already existing app to build a small part of the application(which was not built using React already) as well. We can create a large-scale application also using React.
 
+
+
+Async and Defer attributes in script tag:
+
+When we load the web page, 2 things happen -> HTML parsing & loading of scripts. Loading of script contains 2 parts - one is fetching the script from the network and second is executing the script line by line. 
+
+<script src=""> </script>
+When HTML parsing is happening and it encounters a Script tag, parsing is paused, it fetches the script and executes in then and there. Then parsing continues again. So here, Javascript is actually blocking the rendering of HTML.
+
+<script async src=""> </script>
+When async is used in the script tag, the script is fetched asynchronously when the parsing is going on. Once fetched, parsing is paused and the script is executed then and there as soon as the scripts are available in the browser. Then parsing continues.
+
+<script defer src=""> </script>
+When defer is used, the script is fetched parallelly when HTML parsing is going on but doesn't get executed as soon as the script is available. Only when parsing is completed, the scripts are executed.
+
+Figure explanation from YT video:
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/559524a7-9ffa-4e8c-a856-27ecd74c5a33)
+
+
+Which should be used where?
+Async doesn't guarantee the order of execution of scripts but defer does. When we have multiple dependent scripts, we cannot rely on Async. So defer will be good to use here.
+
+When we are fetching scripts that are independent of our code, Async can be used. 
+
+Using Defer is like getting the best of both worlds. Mostly defer should be used.
