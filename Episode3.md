@@ -58,5 +58,16 @@ Syntax to render a Functional Component:
 root.render(<HeadingComponent/>);  
 This is how Babel understands it. When Babel sees the Angular brackets, it understands it might be a component. 
 
-What if I want to render a Functional component into another Functional Component?
+Both HeadingComponent1 and HeadingComponent2 are the same. When we use curly braces, it is mandatory to use return. When no curly braces are used return should not be used.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/207935a8-1324-43fb-9250-6a49cd3958ef)
+
+We can also use normal function as well for Functional Component,  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/9adcc664-450d-4807-9d26-7a6832cb4b14)
+
+What if I want to render a Functional component into another Functional Component?  
+
+We just declare a Functional component and include it in the Functional component we want, as below. This is also called COMPONENT COMPOSITION.
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/acb8c275-2ced-40e6-a8f3-fe9127778108)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/43073f14-a113-4847-ba9c-55f88ef75cd2)
 
