@@ -66,8 +66,44 @@ We can also use normal function as well for Functional Component,
 
 What if I want to render a Functional component into another Functional Component?  
 
-We just declare a Functional component and include it in the Functional component we want, as below. This is also called COMPONENT COMPOSITION.
+We just declare a Functional component and include it in the Functional component we want, as below. This is also called COMPONENT COMPOSITION.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/acb8c275-2ced-40e6-a8f3-fe9127778108)
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/43073f14-a113-4847-ba9c-55f88ef75cd2)
+
+We can also write the above like this,  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/aa3b3c94-9ecd-401f-90f7-c10cdcc11472)
+
+
+
+We can incorporate ANY JS CODE inside JSX using curly braces "{}". Whatever we put inside these curly braces, gets executed. This is a VERY IMPORTANT CONCEPT. 
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/a155e7f9-dae7-4060-be5c-c28e113ab33e)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/1dcf7cdb-3fa9-4c88-b37d-2204ee4c7e0a)
+
+What if we get an attack through the code we inject through curly braces, let's say I get data from an API, but it contains some code to get my local storage or something dangerous, JSX escapes these kinds of attacks and then only executes the code inside {}. It prevents cross-site attacks for you. JSX has this POWER.
+
+
+In the same way, JS elements can also be put inside JSX. Example below,   
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/aa83cda4-c93b-4d55-992d-2a6d56d4ae64)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/e4f25247-29a3-4596-a53a-26730b81a6fe)
+
+
+
+We can have a Component inside an Element as well.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ece6930b-cee9-4c65-9dca-7d18c61ab2dc)
+
+Here, we can see div container is inside the h1 tag i.e. Title Element.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ca18e807-35ad-4ec1-b6db-e44c99ad1bda)
+
+
+
+We know that a Functional Component is nothing but a JS function. So, we can write any JS code inside {}. This means, we can also write a functional component like this,
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b67b12d2-1e54-4805-b252-3a0dc83300a8)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/36b00b14-bb42-4a99-8381-f23c0de00c91)
+
 
