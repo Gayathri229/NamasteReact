@@ -8,7 +8,7 @@ Now we can use the command "npm run devBuild" for building dev build and "npm ru
 
 JSX  
 
-JSX is a Javascript syntax that is easier to create React Elements.    
+JSX is a extension to Javascript syntax that is easier to create React Elements.    
 JSX is NOT a part of React.  
 JSX is a convention where we merge JS and HTML together.  
 JSX is NOT HTML in JavaScript. JSX is HTML LIKE / XML LIKE Syntax.  
