@@ -104,6 +104,6 @@ We know that a Functional Component is nothing but a JS function. So, we can wri
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b67b12d2-1e54-4805-b252-3a0dc83300a8)
 
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/36b00b14-bb42-4a99-8381-f23c0de00c91)
 
+JSX IS MAKING OUR CODE READABLE.
 
