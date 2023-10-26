@@ -18,4 +18,4 @@
 4. {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>}  
      {TitleComponent} - {} displays/executes any JS code. So here, TitleComponent is considered as a JS code/expression.  
      {<TitleComponent/>} - is used to render a functional component  
-     {<TitleComponent></TitleComponent>} - is same as 2nd one and is used to render a functional component  
+     {<TitleComponent></TitleComponent>} - means the same as 2nd one and is used to render a functional component  
