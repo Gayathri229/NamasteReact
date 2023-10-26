@@ -49,7 +49,14 @@ Functional Components - NEW
 
 FUNCTIONAL COMPONENT:
 
-Any React component should be named starting with the Capital letter.  
-A functional component is nothing but a JS function that returns a JSX Element.  
+Any React component should be named starting with the CAPITAL LETTER.  
+A functional component is nothing but a JS function that returns a JSX Element/React Element. It can return a bunch of React elements as well.
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/0341448b-8557-43eb-b690-3b6e73f71ca8)
+
+
+Syntax to render a Functional Component:  
+root.render(<HeadingComponent/>);  
+This is how Babel understands it. When Babel sees the Angular brackets, it understands it might be a component. 
+
+What if I want to render a Functional component into another Functional Component?
 
