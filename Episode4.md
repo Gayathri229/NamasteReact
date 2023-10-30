@@ -18,8 +18,17 @@ Here, we have passed resName and cuisine as arguments to the RestaurantCard comp
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c81e45f0-0158-426a-863d-cff6182413d6)
 
-We can also destructure the arguments as well, as shown in the below images,  
+We can also destructure the arguments as well, as shown in the below images, this is called DESTRUCTURING ON THE FLY.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/07c14054-a806-4e94-9a75-58eb78053f74)
 
 OR like below  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/719743ad-f51e-4b78-8ddf-bdb663698bf6)
+
+
+CONFIG DRIVEN UI:  
+Controlling how our UI looks based on DATA/Config. Where does the config come from? BACKEND  
+  
+  
+If we have too much data, i.e. say for a restaurant we will have a lot of data like price, location, rating, cuisine, travel time, etc.  
+So, can we include each property one by one in the component? No, we create a JS object, assign all the properties to it, and use it with the dot notation.
+Eg:  
