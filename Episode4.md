@@ -31,4 +31,16 @@ Controlling how our UI looks based on DATA/Config. Where does the config come fr
   
 If we have too much data, i.e. say for a restaurant we will have a lot of data like price, location, rating, cuisine, travel time, etc.  
 So, can we include each property one by one in the component? No, we create a JS object, assign all the properties to it, and use it with the dot notation.
-Eg:  
+Eg:  Here we have list of restaurants with each restaurant having its own rating, price for two, distance and so on.
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/55a64af8-7c95-4758-826c-e679af5e7cab)
+
+
+
+We use map to iterate over each restaurant object from the restaurant list. Whenever we use map, make sure to add the key property with a unique value assigned for each item in the array list. WHY?  
+
+Because, say there are already 15 restaurant cards, and now a new restaurant comes to be displayed before the first one, now the DOM doesn't know which card is the new one and re-renders all the cards again. When we give an ID, it knows which ID is the new one this time and renders that particular card alone. This helps hugely with OPTIMIZATION. So, whenever we write a loop-like thing/map to render the elements it's important to add the key property and it should be UNIQUE. Not using Unique key, takes a PERFORMANCE HIT in the website.
+
+But here, we cannot use INDEX as keys as it's not recommended. But it is better than not using a key when we don't have a unique ID.
+
+not using keys (not acceptable) <<<< index as key <<<<<<<<<<< Unique ID as a key (best practice)
