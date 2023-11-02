@@ -45,12 +45,15 @@
 6. What is virtual DOM?  
      Virtual DOM is a lightweight tree structure that mirrors the actual DOM structure. In a React application, when a component needs to be rendered a new Virtual DOM tree is created representing the updated UI. It then compares with the actual DOM and calculates the minimum changes required to update the real DOM.  
 
-7. What is Reconciliation in React?  
-     Reconciliation helps to provide an efficient and optimized rendering process. It compares the actual DOM and the new virtual DOM 
-
+7. What is Reconciliation in React?
+     Reconciliation refers to process of updating the user interface to reflect the change in application's state. It helps to provide an efficient and optimized rendering process. It compares the actual DOM and the new virtual DOM and calculates the minimal changes required to keep the user interface in sync with the application's data and state changes
 
 8. What is React Fiber?  
-
+     React Fiber was introduced to improve performance and responsiveness of React. It is a internal reimplementation of React core algorithm. This helps with:
+        Improved Performance - More efficient in how it prioritizes, schedules and renders update to User interface.  
+        Responsice User Interface - Helps to prevent UI freezes by interrupting rendering process and giving importance to handling user interactions.  
+        Support for concurrent mode - Allows to perform multiple tasks concurrently
+        Server side rendering and suspense - Fiber allows features like Suspense which delays rendering till data is ready which is important for Server side rendering.  
 
 9. Why do we need keys in React? When do we need keys in React?  
    Keys help us with optimization when we display/render elements in UI. Keys are for Unique Identification of elements to identify which element has been added last and display that element alone along with other existing elements. Else DOM re-renders all the elements again which takes a huge hit in performance.  
