@@ -21,7 +21,7 @@
            );  
            }  
 
-       {<TitleComponent> </TitleComponent>} - Used to display a React Component when it has a child, but it is an unusual way of structuring a component and doesn't promote readability.  
+   {<TitleComponent> </TitleComponent>} - Used to display a React Component when it has a child, but it is an unusual way of structuring a component and doesn't promote readability.  
 
 
 4. How can I write comments in JSX?  
