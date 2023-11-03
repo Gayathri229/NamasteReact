@@ -37,3 +37,7 @@ Eg: Default export
 Eg: Default import  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/0308e30c-7de7-49e5-bd77-c4f962ea4a53)
 
+
+IT IS NOT GOOD PRACTICE TO USE NAMED EXPORT FOR COMPONENTS. USE NAMED EXPORT ONLY WHEN YOU HAVE TO EXPORT MULTIPLE THINGS.
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ae42953a-9aaf-4caf-bd9e-26715b2a286a)
+
