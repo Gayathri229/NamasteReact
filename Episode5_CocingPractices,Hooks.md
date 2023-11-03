@@ -30,6 +30,7 @@ Eg: Named import. We have to use curly braces to import named exports.
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ff816b75-cc42-43ab-a745-601f6cf2319b)
 
 
+
 Eg: Default export  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/50cdbbab-f90c-46a6-b028-0a57679bd3e6)
 
