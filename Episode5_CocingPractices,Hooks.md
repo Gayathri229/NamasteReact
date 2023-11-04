@@ -44,7 +44,7 @@ IT IS NOT GOOD PRACTICE TO USE NAMED EXPORT FOR COMPONENTS. USE NAMED EXPORT ONL
   
   
 
-HOOKS: -----------------------------------------------------------------------------------------------------------------------------------------------------------
+HOOKS: ----------------------------------------------------------------------------------------------------------------------------------------------------
 - To keep the DATA AND UI layer consistent/in sync.   
 - If Data changes UI layer changes.   
 - React updates DOM efficiently.   
