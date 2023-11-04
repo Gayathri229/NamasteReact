@@ -40,4 +40,67 @@ Eg: Default import
 
 IT IS NOT GOOD PRACTICE TO USE NAMED EXPORT FOR COMPONENTS. USE NAMED EXPORT ONLY WHEN YOU HAVE TO EXPORT MULTIPLE THINGS.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ae42953a-9aaf-4caf-bd9e-26715b2a286a)
+  
+  
+  
 
+HOOKS:  
+- To keep the DATA AND UI layer consistent/in sync.   
+- If Data changes UI layer changes.   
+- React updates DOM efficiently.   
+- State variable -> state of the component?  
+- A normal JS utility function, Pre-built.
+- There are multiple hooks in React  
+- Import as named import  
+
+2 Important Hooks are:  
+- useState()  
+- useEffect()
+  
+
+    
+useState():  
+  
+- used to create State variables.  
+- Maintains the state of the component.
+- A Local state variable's scope is inside that component.
+- const [listOfRestaurants] = useState(); -> this is how we create a State variable. Whatever we pass inside the brackets will be its default value.
+    Eg: const [listOfRestaurants] = useState([]); -> here empty list is passed as default value.
+- to use this variable, we can use it like a normal variable.
+- How to modify this variable? -> We have a second parameter when we create the variable which takes the name same as the state variable but with "set" as prefix. We can name it anything but for industry convention, we name it the same as the state variable. This is a method. Whenever we want to change the state of UI, we pass the modified data to this function.  
+  Eg: const [listOfRestaurants, setListOfRestaurants] = useState([]);  
+  Let's say I want to make the listOfRestaurants empty,  
+  setListOfRestaurants([]); -> this will do it.
+
+
+Whenever a State variable updates, React re-renders the components. React is efficient with Re-rendering[super power of react]. 
+
+
+
+Reconciliation Algorithm[React Fiber]:  (Was introduced in React16)
+Whenever something changes on the UI, it's called Reconciliation. 
+React Fiber new way of finding the diff and updating the DOM. 
+
+React creates a Virtual DOM[not an actual DOM] of UI. Virtual DOM is a representation of the Actual DOM. 
+
+Actual DOM:
+<div>
+  <h1>
+    <img>
+  </h1>
+</div>
+
+Virtual DOM:
+The Object we get when we create any React Element. 
+Eg: We've printed the content inside Body tag of the app here. We get an Object printed in console. This JS Object is the Virtual DOM. 
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ff1fe04f-212f-4be6-9f2c-8f28a1f374ff)
+
+
+Diff Algorithm: 
+Finds the difference between the updated Virtual DOM and previous Virtual DOM. 
+
+Let's say, there are 7 cards, we clicked a button, (now a new Virtual DOM/ new Object is created) and only 4 cards have to be displayed. It compares the updated Virtual DOM and the old virtual DOM and calculates the difference[i.e. 4 cards here] and then actually updates the DOM on every render cycle. React doesn't touch the DOM much. This makes React FASTER because it does Efficient DOM Manipulation. This happens every time the State variable changes. React keeps monitoring the State variable. So, the second param of the State variable is the trigger for React to start the diff algorithm. 
+
+Virtual DOM was not introduced with React. This concept existed far before, this was taken and React algorithm was built upon the Virtual DOM.
+
+Core of React Algorithm: Because it has Virtual DOM. It can find out the Diff and manipulate DOM efficiently.
