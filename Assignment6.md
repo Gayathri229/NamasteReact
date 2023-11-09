@@ -25,21 +25,21 @@
 6. What is Shimmer UI?  
     Shimmer UI helps with better User Experience. When the page is in loading state, instead of making the user look at a blank screen we display a fake/look alike components on the page which resembles the page giving a feeling that the page has about to load quickly when it is in loading state.  
 
-7. What is the difference between JS Expression and JS Statement?
-   JS Expression - Produces a value. Eg: 2+3,
-   JS Satement - Performs an operation. Eg: var x=5. Here, it assigns 5 to x.
+7. What is the difference between JS Expression and JS Statement?  
+   JS Expression - Produces a value. Eg: 2+3.    
+   JS Satement - Performs an operation. Eg: var x=5. Here, it assigns 5 to x.  
 
-8. What is conditional rendering? Explain with a code example.
-   When we want to display any component under a condition. Let's say when we toggle a button a paragraph should be displayed.
-   <div>
-     <button onClick = {() => {
-       paraVisible===true ? setParaVisible(false) : setParaVisible(true)
-     }}>Toggle</button>
-     {paraVisible && (<p> Toggled Para </p>)}
-    </div>
-
-   Here, we are displaying the paragraph under the condition when paraVisible is set to true.
-
-9. What is CORS?
-    Cross-Origin Resource Sharing - communicate/request for a resource from one domain to a different domain. The server hosting the resource can specify the origins which are allowed to make a request using the HTTP headers in responses. When we make a request to a domain, from which requesting is not included/allowed in the requested origin, origin mismatch error will be thrown.
+8. What is conditional rendering? Explain with a code example.  
+   When we want to display any component under a condition. Let's say when we toggle a button a paragraph should be displayed.  
+   <div>  
+     <button onClick = {() => {  
+       paraVisible===true ? setParaVisible(false) : setParaVisible(true)  
+     }}>Toggle</button>  
+     {paraVisible && (<p> Toggled Para </p>)}  
+    </div>  
+  
+   Here, we are displaying the paragraph under the condition when paraVisible is set to true.  
+  
+9. What is CORS?  
+    Cross-Origin Resource Sharing - communicate/request for a resource from one domain to a different domain. The server hosting the resource can specify the origins which are allowed to make a request using the HTTP headers in responses. When we make a request to a domain, from which requesting is not included/allowed in the requested origin, origin mismatch error will be thrown.  
    
