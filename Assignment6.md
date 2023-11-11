@@ -44,7 +44,7 @@
     Cross-Origin Resource Sharing - communicate/request for a resource from one domain to a different domain. The server hosting the resource can specify the origins which are allowed to make a request using the HTTP headers in responses. When we make a request to a domain, from which requesting is not included/allowed in the requested origin, origin mismatch error will be thrown.
 
 10. What is async and await?  
-    Async is a keyword used before a function that returns a Promise. Await keyword is used in an async function which helps to wait until the promise is resolved or rejected.  
+    Async is a keyword used before a function that returns a Promise. Await keyword is used in an async function which helps to wait until the promise is resolved or rejected/ promise helps to resolve or reject a Promise.  
 
 11. What is the use of 'const json = await data.json();' in getRestaurants()?  
     To make the fetched api data which is a readable stream into json, we use .json() method. the .json() method returns a promise so to resolve it we've used await keyword infront of it.  
