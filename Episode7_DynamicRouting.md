@@ -42,5 +42,10 @@ And this is why React Applications are called Single Page Applications. It's jus
 
 TYPES OF ROUTING:  
 We can have 2 types of Routing in React Web apps:  Server Side Routing, Client Side Routing.  
-Server Side Routing: When we've used the Anchor tag and clicked on About us, It makes an API call to the about us.html page, fetches it, reloads the whole page and displays it.  Here, aboutUs.html is coming from the server.  
-Client Side Routing: We are not making any API calls when we are moving to a new page. Because all the components are already loaded in our app when we loaded our app for the first time.  
+Server Side Routing: When we've used the Anchor tag and clicked on About us, It makes an API call to the about us.html page, fetches it, reloads the whole page, and displays it.  Here, aboutUs.html is coming from the server.  
+Client Side Routing: We are not making any API calls when we are moving to a new page. Because all the components are already loaded in our app when we loaded the app for the first time.  
+
+
+Dynamic Routing:
+
+url: restaurants/:resId - :resId in url denotes the dynamic value.  
