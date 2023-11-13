@@ -56,4 +56,4 @@ url: restaurants/:resId - :resId in url denotes the dynamic value.
 
 When using a map, always use a Key.  
 
-useParam Hook helps to fetch 
+useParam Hook given by React Router Dom helps to fetch the dynamic param of the url. [check :resId in RestaurantMenu.js]  
