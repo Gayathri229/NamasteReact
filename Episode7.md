@@ -24,6 +24,23 @@ createBrowserRouter takes list as an argument. Here we mention the list of paths
 Path is an object
 Once we define the paths, we need to render it to the screen. This will be done by ReactProvider which is a component, that will provide the routing configuration.  
 There are many routers but createBrowserRouter is the recommended one for React Projects.  
-ReactRouterDom gives us access to a Hook useRouterError. This hook gives more information about the error. 
+ReactRouterDom gives us access to a Hook useRouterError. This hook gives us more information about the error. [check Error.js file]  
 
 
+Children Routes:  
+
+When we move to About page/contact page, we are losing the header. But we want other pages also to be displayed with the Header and Footer.  
+For this we create Chidren Routes. The Outlet component from ReactRouterDom helps us with this. With the child element we create, it helps to replace the Outlet component with the respective component.  
+  
+  
+Don't use Anchor tag in React when we want to route to a different page. This will reload the whole page while taking us to the new page.  
+We can move to a new page without refreshing the whole page which helps to increase performance.  
+Super power given by ReactRouterDom is the Link component. This will just refresh the components. There is a difference between reloading the whole page and refreshing the components alone. If we see in the elements section under inspect, we can see that when we click on the Contact Us/About button, the Header remains intact and only the div below it changes.  
+
+And this is why React Applications are called Single Page Applications. It's just exchange of components.  
+
+
+TYPES OF ROUTING:  
+We can have 2 types of Routing in React Web apps:  Server Side Routing, Client Side Routing.  
+Server Side Routing: When we've used the Anchor tag and clicked on About us, It makes an API call to the about us.html page, fetches it, reloads the whole page and displays it.  Here, aboutUs.html is coming from the server.  
+Client Side Routing: We are not making any API calls when we are moving to a new page. Because all the components are already loaded in our app when we loaded our app for the first time.  
