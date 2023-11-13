@@ -24,6 +24,6 @@ createBrowserRouter takes list as an argument. Here we mention the list of paths
 Path is an object
 Once we define the paths, we need to render it to the screen. This will be done by ReactProvider which is a component, that will provide the routing configuration.  
 There are many routers but createBrowserRouter is the recommended one for React Projects.  
-React router dom gives us access to a Hook useRouterError
+ReactRouterDom gives us access to a Hook useRouterError. This hook gives more information about the error. 
 
 
