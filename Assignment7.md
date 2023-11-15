@@ -19,7 +19,7 @@
    We are getting a list of objects where one has the name dispatchSetState and has some arguments.  
 
 4. How will useEffect behave if we don't add a dependency array?  
-   The mentioned element will get rendered each time the component re-renders which results in performance issues and doesn't provide good user experience.  
+   Dependency array is optional but not adding it lead to useEffect getting rendered each time the component re-renders which results in performance issues and doesn't provide a good user experience.  
 
 5. What is SPA?  
    SPA stands for Single Page Application. React helps to build Single Page Applications, as it's just an exchange of components as it relies on Client Side Routing where the whole app is loaded initially and the components are updated dynamically when the user interacts with the app.  
