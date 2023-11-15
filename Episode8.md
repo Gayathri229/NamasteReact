@@ -48,3 +48,32 @@ Example to update multiple state variables:
 
 Behind the scenes, let's take the above example. When the button is clicked, setState will be called and React takes the object which was passed from the setState and updates it. It doesn't touch the other objects which was not updated.  Say, there were count, count2, count3 and we passed only count in setState, only count will be updated.  
 So here, when the button is clicked the RECONCILIATION is triggered and React finds the diff between the previous and current states and updates it.  
+
+
+HOW THE COMPONENT IS LOADED/MOUNTED ON THE WEB PAGE:   
+Let's take the About.js file for example. AboutUs component is the parent component. When we load this component onto the web page, it goes line by line, sees the UserClass class-based component, and now moves to UserClass and loads it. Now, when a class loads, an instance of the UserClass is created, then its constructor is called(which is the first thing that happens when a class loads), then render is called. 
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b432b280-3a25-4582-bb59-0b98dd72f381)  
+
+Let's make the About component as class-based component, so that it'll be class based component (UserClass) in a class based component(AboutUs). We can see that it is printed in the order => Parent constructor, Parent Render, Child constructor, Child Render. This is how the lifecycle of class-based components works.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/3bd8836a-21ec-4f79-936f-0b265ccbdc6c)  
+
+ComponentDidMount():  
+React class-based components also have another method called, ComponentDidMount(). Once the class loads, first constructor is called, then render, and once the component is loaded and present in the DOM, componentDidMount is called. 
+
+LIFECYCLE OF CLASS BASED COMPONENTS:  
+
+Now, lets add the component did mount console log to both Parent(AboutUs) and Child(UserClass). Now, it will be printed in the order => Parent constructor, Parent Render, Child constructor, Child Render, Child Component Did Mount, Parent Component Did Mount. As the Parent component is fully rendered only when its child is completely rendered/mounted, only then the ComponentDidMount method of Parent will be called. This is the lifecycle of Parent-child relationship.   
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/595a7b71-5c78-4770-9143-c6e97394a36d)
+
+
+Why ComponentDidMount is used?   
+It is used to make API calls once the Component is mounted.  
+Why we make API calls inside ComponentDidMount?  This is similar to useEffect in Functional Components. We use it so that we quickly render the component and then make the API call and then fill the data inside the component to re-render.  
+
+
+When we render the same component twice, it means we are creating two different instances of the same class. 
+
+
+
