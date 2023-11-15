@@ -13,14 +13,14 @@ useState():
 Never create state variables outside your component.  
 Used to create Local state variables inside functional components.  
 Always call it on the top of the component(in code).  
-Never create useState variable inside if else/for loops/functions/condition. Can creact inconsistencies.  
+Never create useState variable inside if else/for loops/functions/condition. Can create inconsistencies.  
 
 
 Routing:
 
-Whenever we develop routes, we've develop a routing configuration.  
+Whenever we develop routes, we develop a routing configuration.  
 Configuration - information that will define what will happen in a specific route/ that will tell the browser router what will happen in a specific path.  
-createBrowserRouter takes list as an argument. Here we mention the list of paths. 
+createBrowserRouter takes list as an argument. Here we mention the list of paths. [check app.js file for routing]
 Path is an object
 Once we define the paths, we need to render it to the screen. This will be done by ReactProvider which is a component, that will provide the routing configuration.  
 There are many routers but createBrowserRouter is the recommended one for React Projects.  
@@ -38,6 +38,8 @@ We can move to a new page without refreshing the whole page which helps to incre
 Super power given by ReactRouterDom is the Link component. This will just refresh the components. There is a difference between reloading the whole page and refreshing the components alone. If we see in the elements section under inspect, we can see that when we click on the Contact Us/About button, the Header remains intact and only the div below it changes.  
   
 Link is given by React Router Dom. It is a wrapper around anchor tag. Link Component uses Anchor tag behind the scenes. And React Router Dom keeps track of the element as a Link. The browser doesn't understand Link, it understands Anchor tag and that's why we see Anchor tag in Elements tab where Link is used.  
+
+We can catch and display the specific error we get when we go to a routing that doesn't exist in our application using the "useRouteError()" hook provided by react router dom.  
   
 
 And this is why React Applications are called Single Page Applications. It's just exchange of components.  
