@@ -51,7 +51,8 @@ Client Side Routing: We are not making any API calls when we are moving to a new
 
 Dynamic Routing:
 
-url: restaurants/:resId - :resId in url denotes the dynamic value.  
+url: restaurants/:resId - ":resId" in url denotes the dynamic value. This value is used to read from the url we are currently in using the useParam hook provided by react router dom when clicked on any restaurant card.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b244a2cb-5a52-4057-9d5f-3640ec07d6d1)
 
 
 When using a map, always use a Key.  
