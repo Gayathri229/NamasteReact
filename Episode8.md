@@ -98,6 +98,7 @@ Below is an example for how LIFECYCLE WORKS where I introduced ANOTHER CHILD INS
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/924e682c-da27-46a0-bef2-8b45013965b4)  
 
-So, we can see the render phase is batched for all the children i.e. even for children of children. That is why we see, Parenr Render phase -> First child render phase -> (First Child's) Super child render phase -> Second child render phase -> (Second child's) Super child render phase -> (First Child's) Super Child Component Did Mount phase -> First Child Component Did Mount -> (Second Child's) Super Child Component Did Mount phase -> Second Child Component Did Mount -> Parent Component Did Mount  
+So, we can see the render phase is batched for all the children i.e. even for children of children. That is why we see, Parent Render phase -> First child render phase -> (First Child's) Super child render phase -> Second child render phase -> (Second child's) Super child render phase -> (First Child's) Super Child Component Did Mount phase -> First Child Component Did Mount -> (Second Child's) Super Child Component Did Mount phase -> Second Child Component Did Mount -> Parent Component Did Mount  
+PS: Ignore useEffect printed at the end.  
 
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/72533b85-acfa-4fe8-92bf-0073d58118c6)
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/72533b85-acfa-4fe8-92bf-0073d58118c6)  
