@@ -88,10 +88,16 @@ Consider only the Mounting box in the diagram, '
 When we render two children, React optimizes this process and batches together the Render phase for both the children, and then executes the Render phase for both the children together.
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b71f6ff7-eb24-449f-b061-f05b6a0319a7)
 
-That's why we see, the constructor and render of both children being called first, then the componentDidMount was called for both the children as part of combining the Render phase. This is because once the commit phase starts, DOM Manipulation has to be done which is a very very expensive operation. Render phase completes quickly where it updates the Virtual DOM but Commit phase takes time and that's why it combines the commit phase of all the children.   
-
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/95bbe605-e965-421d-96a8-3e17565f7088)
+That's why we see, the constructor and render of both children being called first, then the componentDidMount was called for both the children as part of combining the Render phase. This is because once the commit phase starts, DOM Manipulation has to be done which is a very very expensive operation. Render phase completes quickly where it updates the Virtual DOM, finds the Diff between old and new Virtual DOMS, triggers the Reconcilication process, but the Commit phase takes time and that's why it combines the commit phase of all the children.  
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c3920eeb-6e66-4c53-83c3-cf8e866553cb)
 
 
+
+Below is an example for how LIFECYCLE WORKS where I introduced ANOTHER CHILD INSIDE A CHILD (UserClass.js), which is SuperChild.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/924e682c-da27-46a0-bef2-8b45013965b4)  
+
+So, we can see the render phase is batched for all the children i.e. even for children of children. That is why we see, Parenr Render phase -> First child render phase -> (First Child's) Super child render phase -> Second child render phase -> (Second child's) Super child render phase -> (First Child's) Super Child Component Did Mount phase -> First Child Component Did Mount -> (Second Child's) Super Child Component Did Mount phase -> Second Child Component Did Mount -> Parent Component Did Mount  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/72533b85-acfa-4fe8-92bf-0073d58118c6)
