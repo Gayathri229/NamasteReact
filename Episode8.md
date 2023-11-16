@@ -137,6 +137,7 @@ When the component will disappear from the UI. Then willUnmount will be called. 
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/94684d2f-55b3-4612-898f-0074095071fd)  
 
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/bcd285f0-a36f-4c99-8d79-441d95669acf)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/317f4966-b62e-4d1a-9d4d-0537439c1e24)
 
 
