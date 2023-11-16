@@ -126,10 +126,17 @@ ComponentDidMount is called
 -------- UPDATING ----------  
 RENDER (API data is updated in virtual DOM)  
 DOM update (Actual DOM gets updated with API Data)  
-ComponentDidUpdate is called  
+ComponentDidUpdate is called (called after the update cycle)  
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/fca104ac-2cda-421a-9a75-c0574654b408)  
 
 
+Now, let's see the unmounting phase.  
+What is unmounting?  
+When the component will disappear from the UI. Then willUnmount will be called. Here, in the below image for unmount to be called we clicked on ContactUs button, so that this component will unmount.  
 
-    
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/94684d2f-55b3-4612-898f-0074095071fd)  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/bcd285f0-a36f-4c99-8d79-441d95669acf)
+
+
