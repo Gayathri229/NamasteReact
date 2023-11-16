@@ -135,9 +135,9 @@ Now, let's see the unmounting phase.
 What is unmounting?  
 When the component will disappear from the UI. Then willUnmount will be called. Here, in the below image for unmount to be called we clicked on ContactUs button, so that this component will unmount.  
 
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/94684d2f-55b3-4612-898f-0074095071fd)  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/317f4966-b62e-4d1a-9d4d-0537439c1e24)  
 
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/5c87b409-78ca-4117-a2a9-145205498ab4)
 
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/317f4966-b62e-4d1a-9d4d-0537439c1e24)
 
 
