@@ -102,3 +102,34 @@ So, we can see the render phase is batched for all the children i.e. even for ch
 PS: Ignore useEffect printed at the end.  
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/72533b85-acfa-4fe8-92bf-0073d58118c6)  
+
+
+How do we make API call in ComponentDidMount()?  
+
+We make the componentDidMount method as an async function and use the fetch api given by browser, mostly like we do in functional component. For setting the response and displaying we use the local state variables like the below.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b1b8a062-c4b7-4bde-a9a6-2155e1bd5e74)  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/88bd7847-88b7-4817-b9b2-407e16c6051c)  
+
+Let's see behind the scenes now...  
+Let's take the lifecycle flow,   
+------ MOUNTING --------  
+Constructor (Dummy data is set in the state variable)  
+Render (Virtual DOM is updated with Dummy data)  
+DOM Update (Actual DOM gets updated with dummy data - which we see for few ms)  
+ComponentDidMount is called  
+    API call  
+    this.setState (State variable is updated)  
+  
+
+-------- UPDATING ----------  
+RENDER (API data is updated in virtual DOM)  
+DOM update (Actual DOM gets updated with API Data)  
+ComponentDidUpdate is called  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/fca104ac-2cda-421a-9a75-c0574654b408)  
+
+
+
+    
