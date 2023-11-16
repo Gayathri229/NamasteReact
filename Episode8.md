@@ -73,7 +73,25 @@ It is used to make API calls once the Component is mounted.
 Why we make API calls inside ComponentDidMount?  This is similar to useEffect in Functional Components. We use it so that we quickly render the component and then make the API call and then fill the data inside the component to re-render.  
 
 
-When we render the same component twice, it means we are creating two different instances of the same class. 
+When we render the same component twice, it means we are creating two different instances of the same class. Let's say we display UserClass twice and let's see how the lifecycle goes.  
 
+When the component is mounted it is mounted in 2 phases, render phase and commit phase.  
+
+Render phase: Constructor is called -> Render is called
+Commit phase: Updates the ACTUAL DOM -> Component Did Mount is called
+
+Since, Component Did Mount is called after DOM updation, Component Did Mount is the best place to make an API call.  
+
+Now, let's go back to displaying the same class component twice inside a Parent class component.  
+
+Consider only the Mounting box in the diagram, '
+When we render two children, React optimizes this process and batches together the Render phase for both the children, and then executes the Render phase for both the children together.
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b71f6ff7-eb24-449f-b061-f05b6a0319a7)
+
+That's why we see, the constructor and render of both children being called first, then the componentDidMount was called for both the children as part of combining the Render phase. This is because once the commit phase starts, DOM Manipulation has to be done which is a very very expensive operation. Render phase completes quickly where it updates the Virtual DOM but Commit phase takes time and that's why it combines the commit phase of all the children.   
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/95bbe605-e965-421d-96a8-3e17565f7088)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c3920eeb-6e66-4c53-83c3-cf8e866553cb)
 
 
