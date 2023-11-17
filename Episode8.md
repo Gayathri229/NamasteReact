@@ -139,3 +139,30 @@ When the component will disappear from the UI. Then willUnmount will be called. 
 
 
 
+DO NOT COMPARE REACT LIFECYCLE METHODS TO FUNCTION METHODS.  
+ComponentDidMount is not equivalent to useEffect. useEffect does not use ComponentDidMount behind the scenes.  
+After the initial render componentDidMount is called. Then for every subsequent render, componentDidUpdate is called, it is not mounted it is updated. So componentDidMount, componentDidUpdate, componentWillUnmount are all different and called at different times.  
+
+
+componentDidUpdate() lifecycle method is called after every render.  
+
+this is shared by all the lifecycle methods.  
+
+Why do we need or when will be componentWillUnmount() method be used?  
+For this let's include a setInterval() in componentDidMount() method with an interval of 1s. Now, when we go to the About page, we can see the setInterval console log in the terminal. When we move to the Contact Us page, component unmount got printed but still we can see the setInterval console log printing and running, so this indicates that the component just got replaced when we moved to Contact page, but was not unmounted properly and this will cause performance issues.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/779aefff-aaf1-424d-9f05-b20e1fde83f0)  
+
+
+One more thing to note here: When we move to Contact page, then come back to About page, we see the interval getting increased at 2s at a time, this is because the interval that was set is not unmounted yet and as we come back to the same page again, another interval with 1s starts again. This increases as we keep moving to another page and coming back to About page.  
+
+In the below image, we can see that even after the unmounted message, interval keeps running.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/7d13433a-5280-4abb-9d7e-efdb64e5e3a4)  
+
+
+So, to avoid this kind of issues we need to unmount the component always. So, for setInterval in componentDidMount we do clearInterval in componentWillUnmount.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/11c47380-dc3b-4865-b42d-82fa74f9fb66)  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/7e27038f-c2cf-43f2-b666-0b50c4e6c4f3)  
+
