@@ -166,3 +166,24 @@ So, to avoid this kind of issues we need to unmount the component always. So, fo
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/7e27038f-c2cf-43f2-b666-0b50c4e6c4f3)  
 
+
+
+Now, if we include the same setInterval in useEffect how do we unmount it?  
+It behaves the same like setInterval i.e. setInterval keeps running even when we move to a different page.  
+For unmounting in functional components, we can return a function from useEffect(), and that will be called when we need to unmount the component i.e. return will be called when we leave the page or when the component gets replaced.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/aad7ab2d-cccf-4ac3-952a-acdad400c9f0)  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c3ce5cd6-0253-4ae4-a0b3-63f6d92097c4)  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/fd079569-067a-4395-8460-d612904cde5e)  
+
+
+With the setInterval example,  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/f10c3fe1-2f6a-4b45-a0e1-599a3bf2f998)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/faacf565-887e-43e9-b5fc-8e1f9b490177)
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/1670dbe1-a6b6-42be-bb16-0bc155a1a8f9)
+
+
+
