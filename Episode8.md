@@ -174,9 +174,10 @@ For unmounting in functional components, we can return a function from useEffect
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/aad7ab2d-cccf-4ac3-952a-acdad400c9f0)  
   
-Here, we can see useEffect return printed once we moved to Home page.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c3ce5cd6-0253-4ae4-a0b3-63f6d92097c4)  
 
+Here, we can see useEffect return printed once we moved to Home page.  
+  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/fd079569-067a-4395-8460-d612904cde5e)  
 
 
