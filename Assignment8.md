@@ -17,7 +17,7 @@
    Having useEffect callback function as async will return a Promise to the return/cleanup function. The callback function expects a return function or nothing at all. So when a promise is returned either will not be handled properly or leads to unexpected behavior. This also leads to the return function never being called which can cause unnecessary errors.  
    
 7. Read about createHashRouter and createMemoryRouter from React Router Docs.  
-   createHashRouter - Uses the portion of url after the # to represent different routes. It is used when we are unable to configure web sever to direct all the traffic to the React application.
+   createHashRouter - Uses the portion of url after the # to represent different routes. It is used when we are unable to configure web sever to direct all the traffic to the React application.  
    createMemoryRouter - Manages it's own history stack in the memory instead of using browser history. Navigation doesn't affect the browser URL, making it suited for scenarios where the state change in page doesn't need a URL change.  
    
    
