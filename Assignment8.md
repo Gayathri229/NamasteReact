@@ -15,3 +15,6 @@
 
 6. Why can't we have the callback function of useEffect async?
    
+
+8. Read about createHashRouter and createMemoryRouter from React Router Docs.
+   
