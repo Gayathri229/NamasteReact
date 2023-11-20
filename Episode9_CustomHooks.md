@@ -6,3 +6,4 @@ Maintaining modularity(splitting code into different small modules) helps to mak
 
 Custom Hooks:  
 Hooks: Special JS utility functions given by React.  
+We extract some responsibility from a component into a Hook so that both the component and Hook become more modular.  
