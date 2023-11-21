@@ -35,11 +35,11 @@ What happens behind the scenes is that, as soon as we land on our app, this part
 Another thing is that, when we are in home page, we just have one file as shown below.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/5c8bad93-1dc9-4eb4-b0cc-c90d8e0dad18)  
 
-Now when we try moving to that page, we will get an error like the below image. This is because the Grocery code took more time to come to the browser i.e. React tried to load the Grocery component, but the code was not there, so React suspended the rendering. This state in the middle, caused it to throw the below error.  
+Now when we try moving to the Grocery page, we will get an error like the below image. This is because the Grocery code took more time to come to the browser i.e. React tried to load the Grocery component, but the code was not there, so React suspended the rendering. This state in the middle, caused it to throw the below error.  
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/8e5c2863-73c3-4ac9-93d8-24f336746d0b)  
 
-Now, for this issue we use a component called Suspense from React library. And we wrap our component in this Suspense component. This acts as a fallback or placeholder. Here we give what should be rendered when the expected code is not available.  
+Now, for this issue we use a component called Suspense from React library. And we wrap our component in this Suspense component. This acts as a fallback or placeholder for what should be rendered when the expected code is not available.  
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ae7be3ba-3cce-42b4-8beb-07c5ea6436b6)
 
