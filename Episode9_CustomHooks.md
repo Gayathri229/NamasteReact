@@ -15,7 +15,7 @@ When writing a custom Hook, always think like what it takes as input and what it
   
 Chunking/Code Splitting/Dynamic Bundling:  
 
-Our bundler i.e. Parcel(used for the Swiggy app)  bundles all the JS code into one and makes it into a single JS file behind the scenes. As the code grows, the size of JS file increases, which is not good for the app as it becomes slower with increasing size. So, we make smaller bundles of these files.  
+Our bundler i.e. Parcel(used for the Swiggy app)  bundles all the JS code into one and makes it into a single JS file behind the scenes. As the code grows, the size of JS file increases, which is not good for the app as it becomes slower with increasing size. So, we make smaller bundles of these files. Chunking becomes inevitable when we are building large applications with 1000s of components and the app starts bloating(i.e. file size gets bigger and bigger) which can cause the app to load slower and slower. Chunking makes our app light-weight and optimized. The below 4 lines of code makes WONDERSSSS.  
 
 Logical splitting of bundles:  
 A bundle should have enough code for a major feature. Eg: Makemytrip - a bundle for Flights feature, a bundle for Homestays, one for Hotels etc.  
