@@ -7,8 +7,8 @@
 3. Why we got this error: A component suspended while responding to synchronous input. This will cause the UI to be replaced with a long indicator. To fix, updates that suspend should be wrapped with startTransition? How does suspense fix this error?  
    This error was caused because the dynamic import file took longer time than expected to load in the browser. We handled this by wrapping the dynamic import components in the Suspense component with the fallback code which will act as a placeholder for this state.
 
-4. Advantages and disadvantages of using code splitting pattern?
-   Advantage:  
+4. Advantages and disadvantages of using code splitting pattern?  
+   Advantages:  
    - Faster initial page load
    - Lazy loading
    - Better User experience
