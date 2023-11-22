@@ -17,7 +17,8 @@
    Disadvantages:
    - Complexity - code splitting introduces complexity to build process.
    - Dependency on network conditions - May introduce a delay in loading of features/components if network conditions are poor.
-   - Potential for overhead - overhead of loading additional code chunks may be noticeable on very fast ntetworks.
+   - Potential for overhead - overhead of loading additional code chunks may be noticeable on very fast networks.
   
 5. When and why do we need suspense?
+   Suspense is needed when we plan to optimize our code by chunking/code splitting/on-demand loading. It helps to act as a placeholder when the dynamically imported files take more time to load on the browser when accessed. We can mention the code to be displayed in the fallback attribute of the Suspense component.  
    
