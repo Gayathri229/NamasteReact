@@ -8,8 +8,8 @@ Bootstrap
 Chakra UI
 ANT design
 Tailwind CSS
-#
-#
+\
+\
 
 Tailwind CSS:  
 - Works with all frameworks like React, Angular, any other UI frameworks.  
