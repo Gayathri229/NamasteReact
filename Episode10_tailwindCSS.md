@@ -23,4 +23,12 @@ Tailwind CSS:
 @tailwind components;
 @tailwind utilities;
 
+<br/>
+<br/>
+<br/>
+
+Tailwind css gives you a classname automatically for every css we write in our app.
+Tailwind CSS is very light weight. It only imports what is used and doesn't include any imports that are not used.  
+Doesn't bloat your application.  
+
 
