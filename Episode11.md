@@ -10,7 +10,7 @@ Here, we have taken the RestaurantCard component and included the Promoted label
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/f27b6313-10f6-47ac-ac56-b70b28733121)
 
 
-The RestaurantCard displayed in withPromotedLabel also needs props to get displayed, so we've passed props from where it is used. Refer the below image.
+The RestaurantCard displayed in withPromotedLabel also needs props to get displayed, so we've passed props to RestaurantCardPromoted as well. Refer the below image.
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b765e9ff-2225-48a6-ab4b-4460d251a24d)
 
