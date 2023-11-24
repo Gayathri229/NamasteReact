@@ -11,6 +11,8 @@
    - theme => This key is used to default styles and configurations for your project. It includes various sub-keys like colors, font, spacing, breakpoints, etc that we can customize.  
    - extend => This key is used to override styles in the default theme. It's used to add custom colors, fonts, spacing, and other styles that are not included in the default Tailwind CSS setup.  
    - plugins => This key allows you to use and configure external Tailwind CSS plugins. Plugins are additional modules that add functionality and styles to Tailwind. Eg: we can use plugin that provides additional                    utility classes.  
-  
+
+  <br/>
+
 3. Why do we have .postcssrc file?  
    .postcssrc file is used to tell the bundler that tailwind css is used in this project/app. Bundler(Parcel) uses postcssrc file to read & understand tailwind CSS.  
