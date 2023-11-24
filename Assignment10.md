@@ -15,4 +15,5 @@
   <br/>
 
 3. Why do we have .postcssrc file?  
-   .postcssrc file is used to tell the bundler that tailwind css is used in this project/app. Bundler(Parcel) uses postcssrc file to read & understand tailwind CSS.  
+   .postcssrc file is used to tell the bundler that tailwind css is used in this project/app. Bundler(Parcel) uses postcssrc file to read & understand tailwind CSS.
+   Tailwind CSS relies on Post CSS for processing and transforming its utility classes in actual CSS (for my understanding).  
