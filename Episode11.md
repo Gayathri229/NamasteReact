@@ -14,6 +14,6 @@ The RestaurantCard displayed in withPromotedLabel also needs props to get displa
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b765e9ff-2225-48a6-ab4b-4460d251a24d)
 
-This is how we use the higher order component.  
+This is how we use the higher order component in the imported file.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/28104209-3a6f-4dff-8acd-8fb1acf6d308)
 
