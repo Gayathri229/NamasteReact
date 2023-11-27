@@ -29,5 +29,26 @@ Components Tab - Gives a representation of all the components used in that page.
 Profiler - Records the React application and tracks the actions we perform while recording.  
 
 <br/>
-Controlled and Uncontrolled components:  
 
+Lifting State Up [State lifting to the Parent]:  
+The parent component has the state control of its child component. We pass the state as a prop to the child component from the parent component.  
+
+<br/>
+Controlled and Uncontrolled components:  
+Uncontrolled: A component has its own state.  
+Controlled: A component's state control is with another/Parent component giving it the power to control its child components. Relies on its parents to tell what to do.  
+
+
+<br/>
+
+Props drilling:  
+React is a one way data stream[top to bottom]. Let's say we want to send a prop from the topmost level component to its 10th or 11th level child. What we do is we pass the prop from the top most level to its child. then to its child and so on till 11th level. But is this correct? the components in-between doesnt use that prop but simply passes it. This is not a good way. This is known as Prop drilling.  
+
+So, in larger applications this will be a common scenario and we cant pass props like above. For this React provides us with REACT CONTEXT.  
+
+<br/>
+
+React Context:  
+Prop drilling is the problem and React context is a solution for it.  
+We keep data in a Global/central place and anybody can access it. [DO NOT USE the WORD Global object in INTERVIEWS]  
+React gives us access to a utility function createContext which comes from react library. And we can use this Context anywhere in the project using useContext() Hook.  
