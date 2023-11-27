@@ -17,5 +17,17 @@ The RestaurantCard displayed in withPromotedLabel also needs props to get displa
 This is how we use the higher order component in the imported file.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/28104209-3a6f-4dff-8acd-8fb1acf6d308)
 
+<br/>
 
-React applications has two layers: UI layer & Data layer. UI layer(JSX) is powered by Data layer. Data layer consists of States, Props etc.
+React applications has two layers: UI layer & Data layer.  
+UI layer(JSX) is powered by Data layer. [UI layer - JSX]  
+Data layer consists of States, Props etc. [Data layer - States, Props]  
+
+<br/>
+React Dev Tools extension:  
+Components Tab - Gives a representation of all the components used in that page. We can say its a Representation of the Virtual DOM on the left side. And when clicked on any component, displays the Data layer i.e the State variables and hooks used in that component.  
+Profiler - Records the React application and tracks the actions we perform while recording.  
+
+<br/>
+Controlled and Uncontrolled components:  
+
