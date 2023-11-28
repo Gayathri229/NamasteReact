@@ -16,7 +16,7 @@
 
    - If we don't use the Provider component itself, then it takes the default value. Let's take the below code as example for this second point.  
 
-In the below code, I've displayed the Header twice with the Provider component & value passed and without the Provider component. Here, loggedInUser value is used in the Header component.  
+In the below code, I've displayed the Header twice with the Provider component & value passed and without the Provider component. Here, loggedInUser value is being used in the Header component.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/eac47036-d1bd-493a-a386-da12fb1e8fcc)
 
 As we can see here, the first Header has taken the passed value and the second one has taken the Default value.  
