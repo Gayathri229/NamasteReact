@@ -103,6 +103,7 @@ Here, we have used the setUserName state variable to set the name data to logged
 
 <br/>
 Now, using this we will set an input in the Home page, and dynamically set the userName throughout the app as we change the input. Here, we've set the value of the input box as loggedInUser from UserContext and set the username i.e. setUserName as the inputted value. So, now the username will change throughout the app as we change the input here.  
+
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/2c74daa0-cb10-478f-9829-5961789ab1b6)
 
 Here, Dhoni was given as the input here and we can see the username in Header and About Us page has changed.  
