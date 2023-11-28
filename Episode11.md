@@ -65,7 +65,34 @@ To use a context,
 
 
 Using Context in Class-Based Components:  
-In class-based components, we do not have hooks. So to access it using <UserContext.Consumer> component. It has a function that helps us to access the current Context values.  
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/868e9e50-d66d-49c0-9ac6-98a202bcd038)
+In class-based components, we do not have hooks. So we access it using <UserContext.Consumer> component. It has a function that helps us to access the current Context values. The data argument in the below function comes from the function present in UserContext.Consumer component which is provided by React.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/868e9e50-d66d-49c0-9ac6-98a202bcd038)  
 
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/f938f5b8-3e47-40ec-8347-838447cabfc6)  
+
+<br/>
+
+Updating/changing the Context value:  
+UserContext.Provider component helps to update the default context values we set. We can use the "value" prop in the Provider component to send the updated values. This overrides the default value of context. 
+So, we can wrap the part of the code where we need that updated value with the UserContext.Provider component.  If we want it to be updated for the whole app, we can wrap the App layout with that. If we want only the Header to have the updated value, we can wrap the Header alone with that component.  
+<br/>
+In the below code, we've wrapped the whole App with the updated userName.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/df341d2d-47a2-4306-ba7a-25d35f1cc7e3)  
+Here, we can see both Header and About has updated userName: Gayathri
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/d89f092b-1714-4483-9807-bbd1e7d9a7fb)  
+
+<br/>
+
+In the below code, we've wrapped only the Header with the updated userName  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/0a65b541-e0bd-45ae-a9ef-a18d3c9fde3e)  
+Here, we can see only the Header has the updated username but the About page still has the Default username  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/73c9758f-ed91-458a-aa8c-ee743646045c)
+
+We can also use Nested Contexts.  
+Here, we've wrapped the whole app with updated userName: Gayathri and the Header is wrapped with the userName: Elon Musk  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/f7ea3bbd-c9db-4e33-80ec-3ee6f46e5664)  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/33405310-56ab-49c8-82a2-c44c0dda7a4a)  
+
+So, we can see that only the Header has the value Elon Musk, and the About page has the value Gayathri which will also be applied for the whole app.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/803b96bb-1548-4904-9ce1-3589d3ccbde7)  
 
