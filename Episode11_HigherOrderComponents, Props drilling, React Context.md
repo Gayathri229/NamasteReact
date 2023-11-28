@@ -36,7 +36,7 @@ The parent component has the state control of its child component. We pass the s
 <br/>
 Controlled and Uncontrolled components:  
 
-Uncontrolled: A component has its own state.  
+Uncontrolled: A component has the power to control its own state/maintain its own state.  
 Controlled: A component's state control is with another/Parent component giving it the power to control its child components. Relies on its parents to tell what to do.  
 
 
