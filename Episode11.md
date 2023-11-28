@@ -42,6 +42,7 @@ Controlled: A component's state control is with another/Parent component giving 
 <br/>
 
 Props drilling:  
+READ ABOUT PROPS DRILLING IN REACT DOCS...
 React is a one way data stream[top to bottom]. Let's say we want to send a prop from the topmost level component to its 10th or 11th level child. What we do is we pass the prop from the top most level to its child. then to its child and so on till 11th level. But is this correct? the components in-between doesnt use that prop but simply passes it. This is not a good way. This is known as Prop drilling.  
 
 So, in larger applications this will be a common scenario and we cant pass props like above. For this React provides us with REACT CONTEXT.  
@@ -49,6 +50,22 @@ So, in larger applications this will be a common scenario and we cant pass props
 <br/>
 
 React Context:  
-Prop drilling is the problem and React context is a solution for it.  
+Prop drilling is the problem and React Context is ONE OF THE solutions for it.  
 We keep data in a Global/central place and anybody can access it. [DO NOT USE the WORD Global object in INTERVIEWS]  
-React gives us access to a utility function createContext which comes from react library. And we can use this Context anywhere in the project using useContext() Hook.  
+React gives us access to a utility function createContext which comes from react library. We can use this Context anywhere in the project using useContext() Hook.  
+We can have as many Contexts as we want to.  
+Only keep data that is used in multiple places in the app or the data you think will be used in multiple places in Context.   
+Let's take a LoggedIn User name for example which needs to be shown throughout the app in different places and we need to access it from anywhere in the app. We hold this data in a Context and use it anywhere in the app.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ceaec97a-7d85-4f5a-a919-b0b0e1076783)  
+
+To use a context,  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/5e4c5a81-92cb-4f97-868c-9ff5698d2fdb)  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/643343fe-e9a3-44b0-a743-b5995d9043b8)  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c8b93714-2aca-4790-9b49-be52db354027)  
+
+
+Using Context in Class-Based Components:  
+In class-based components, we do not have hooks. So to access it using <UserContext.Consumer> component. It has a function that helps us to access the current Context values.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/868e9e50-d66d-49c0-9ac6-98a202bcd038)
+
+
