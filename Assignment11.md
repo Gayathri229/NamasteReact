@@ -9,8 +9,10 @@
    Context Consumer component is used in class-based components to access the values in a Context through a callback function.
 
 4. If you don't pass a value to the Provider does it take the default value?  
-   - Provider doesn't take the default value when value is not passed. Instead, it throws a typeError saying the value is undefined.  
-     ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/443ef73f-efc8-4841-9c8e-b7b2c4f18b20)
+   - Provider doesn't take the default value when value is not passed. Instead, it throws a typeError saying the value is undefined.
+     ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/cb7da09f-8415-42c3-81cc-c018a8d11d24)  
+
+     ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/443ef73f-efc8-4841-9c8e-b7b2c4f18b20)  
 
    - If we don't use the Provider component itself, then it takes the default value. Let's take the below code as example for this second point.  
 
