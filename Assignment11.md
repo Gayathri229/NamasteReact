@@ -22,4 +22,4 @@ In the below code, I've displayed the Header twice with the Provider component &
 As we can see here, the first Header has taken the passed value and the second one has taken the Default value.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/85157b93-363c-4cb5-983b-91ed91221109)  
 
-So, this means we need to pass the value prop when the Provider component is used. Provider doesn't work without the value prop. (For my understanding)  
+So, this means we need to pass the value prop when the Provider component is used. Provider doesn't work without the value prop. When we use Provider, it means we're updating the default context value, so when we don't pass the value to be updated, it throws an error as the expected value i.e the updated value is not present (For my understanding)  
