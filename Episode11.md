@@ -96,3 +96,20 @@ Here, we've wrapped the whole app with updated userName: Gayathri and the Header
 So, we can see that only the Header has the value Elon Musk, and the About page has the value Gayathri which will also be applied for the whole app.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/803b96bb-1548-4904-9ce1-3589d3ccbde7)  
 
+
+Let's try using state variable and Context together.  
+Here, we have used the setUserName state variable to set the name data to loggedInUser in the value prop. And also we've sent the setUserName function as well to the value prop. This means, now setUserName is also a property of UserContext and we can use it anywhere we want in the App. The value prop is flexible in this way and allows us to send/add new properties.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/1a10cbef-e0f1-4d64-80af-dce3520f3979)  
+
+<br/>
+Now, using this we will set an input in the Home page, and dynamically set the userName throughout the app as we change the input. Here, we've set the value of the input box as loggedInUser from UserContext and set the username i.e. setUserName as the inputted value. So, now the username will change throughout the app as we change the input here.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/2c74daa0-cb10-478f-9829-5961789ab1b6)
+
+Here, Dhoni was given as the input here and we can see the username in Header and About Us page has changed.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ed23bb35-bb96-47f2-aa04-93329add8ea3)  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/fd60bf0d-a728-4838-be41-ccef4bc43516)
+
+Context is a powerful tool to manage data in our application which React itself provides.  
+When we use Redux, we won't need Context. Redux also creates a store, a central store and we can access it from anywhere inside the application. But Redux is an external State management library and is not inside React.  
+Context can be used for Small and Medium-sized applications. Context scales well for small and medium size applications.  
+Why we can't use it for Very Large applications? We can use but most people prefer Redux. And also Redux is scalable when applications become huge.  
