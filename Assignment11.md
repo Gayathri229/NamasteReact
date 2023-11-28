@@ -10,6 +10,8 @@
 
 4. If you don't pass a value to the Provider does it take the default value?  
    - Provider doesn't take the default value when value is not passed. Instead, it throws a typeError saying the value is undefined.  
+     ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/443ef73f-efc8-4841-9c8e-b7b2c4f18b20)
+
    - If we don't use the Provider component itself, then it takes the default value. Let's take the below code as example for this second point.  
 
 In the below code, I've displayed the Header twice with the Provider component & value passed and without the Provider component. Here, loggedInUser value is used in the Header component.  
@@ -17,3 +19,5 @@ In the below code, I've displayed the Header twice with the Provider component &
 
 As we can see here, the first Header has taken the passed value and the second one has taken the Default value.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/85157b93-363c-4cb5-983b-91ed91221109)  
+
+So, this means we need to pass the value prop when the Provider component is used. Provider doesn't work without the value prop. (For my understanding)  
