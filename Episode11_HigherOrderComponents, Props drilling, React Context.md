@@ -51,7 +51,7 @@ So, in larger applications this will be a common scenario and we cant pass props
 
 React Context:  
 Prop drilling is the problem and React Context is ONE OF THE solutions for it.  
-We keep data in a Global/central place and anybody can access it. [DO NOT USE the WORD Global object in INTERVIEWS]  
+We keep data in a Global/central place and assign a default value to it so that it can be accessed from anywhere in the app. [DO NOT USE the WORD Global object in INTERVIEWS]  
 React gives us access to a utility function createContext which comes from react library. We can use this Context anywhere in the project using useContext() Hook.  
 We can have as many Contexts as we want to.  
 Only keep data that is used in multiple places in the app or the data you think will be used in multiple places in Context.   
