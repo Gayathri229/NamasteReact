@@ -25,4 +25,17 @@ Now, let's take an example from our App to use the Redux ToolKit and build the C
 How does the Data go into the Cart Slice?  We can't add data directly into the Cart Slice. Redux doesn't allow this.  
 When we click on the Add button, it DISPATCHES an ACTION. The action calls a FUNCTION(REDUCER function). And this Reducer function internally modifies the Cart/ Cart Slice of the Redux Store.  
 The function is known as a Reducer.  
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/1a933a46-4682-4c57-a561-c31a32641aa2)
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/1a933a46-4682-4c57-a561-c31a32641aa2)  
+
+What we saw above is how to write data.  
+How to READ data from a Slice?  
+We use a SELECTOR. The Selector will read the data from Redux Store and the Selector will update/modify the React Component. Using the SELECTOR is known as SUBSCRIBING TO THE STORE. When we say subscribed to the Store, it means the React Component(in this Eg, Cart/Cart component) is in SYNC with the Store. If the Data in the Store changes, the Cart component will update automatically.  
+We can say that the Cart in the Header has SUBSCRIBED to the Store using the SELECTOR. And because of this, the item count in the Cart changes automatically when we click on the ADD button.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/3cde01cb-558a-4f2e-9847-84635e90160f)  
+
+<br/>
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/84656ce1-5fa3-4d3a-a0a0-5f19a45a6a9c)
+
+
+
