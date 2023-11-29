@@ -38,4 +38,18 @@ We can say that the Cart in the Header has SUBSCRIBED to the Store using the SEL
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/84656ce1-5fa3-4d3a-a0a0-5f19a45a6a9c)
 
 
+Commands to install redux toolkit and react-redux:  
+npm install @reduxjs/toolkit  
+npm install react-redux  
+<br/>
+
+Now let's build our Redux store:  
+configureStore() function which is provided by the Redux toolkit helps us to create a store.  
+Now, we've to give/link the Store to our application. Provider component given by react-redux will help to link the store and our application. We wrap the whole app in the Provider component with store as a prop and pass the "appStore" as the prop value. We can also wrap only a part of the code with the Provider component where it is needed alone as well.  
+Note: React-redux helps in bridging the store and app. Redux toolkit helps in creating the Store.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/1816e3e3-14b6-4f4a-b980-815fc7838d32)  
+
+Now, to create a Slice, we use the function createSlice given by Redux toolkit. The createSlice function takes fe configurations for a Slice like name, initialState(Object), reducers(Object) etc. 
+Reducers - reducer function corresponding to each action(say add/remove item, clear cart)
+
 
