@@ -49,7 +49,19 @@ Now, we've to give/link the Store to our application. Provider component given b
 Note: React-redux helps in bridging the store and app. Redux toolkit helps in creating the Store.  
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/1816e3e3-14b6-4f4a-b980-815fc7838d32)  
 
-Now, to create a Slice, we use the function createSlice given by Redux toolkit. The createSlice function takes fe configurations for a Slice like name, initialState(Object), reducers(Object) etc. 
-Reducers - reducer function corresponding to each action(say add/remove item, clear cart)
+Now, to create a Slice, we use the function createSlice given by Redux toolkit. The createSlice function takes few configurations for a Slice like name, initialState(Object), actions, and reducers(Object).  
+Reducers - reducer function corresponding to each action(say add/remove item, clear cart)  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ebc08873-1aa3-4d1d-8286-266f3b768a79)  
+
+Now, we add the Slice to the Store. The store also has a reducer which is responsible to modify the app store. And it consists of reducers from all the different Slices in the app.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/8a24ed0f-3046-4cee-be01-4c42cd5f9e21)  
+
+How will we Read those values from the Store(Cart Slice)?  
+Using the Selector Hook. React-redux gives us a Selector Hook to Subscribe to the Store. It also helps to identify what portion of the Store we need. 
+
+
+
+
 
 
