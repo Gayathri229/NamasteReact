@@ -58,7 +58,9 @@ Now, we add the Slice to the Store. The store also has a reducer which is respon
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/8a24ed0f-3046-4cee-be01-4c42cd5f9e21)  
 
 How will we Read those values from the Store(Cart Slice)?  
-Using the Selector Hook. React-redux gives us a Selector Hook to Subscribe to the Store. It also helps to identify what portion of the Store we need. 
+Using the Selector Hook. React-redux gives us a Selector Hook to Subscribe to the Store. It also helps to identify what portion of the Store we need.  
+
+
 
 
 
