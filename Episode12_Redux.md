@@ -99,6 +99,9 @@ And in the second one we've subscribed to the whole Store and from that we've ex
    ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/dad88a4d-b5cf-49c1-99cb-728836fff4aa)  
 
 
+3. Why state = [] doesn't work?
+   
+
 
 
 
