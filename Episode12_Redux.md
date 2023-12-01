@@ -121,6 +121,7 @@ So, we can either mutate the existing state or return an empty array (which is a
    NOTE: If we want to console log the State/anything in a reducer function, it just prints a Proxy Object and not the Data we want. We should use current(state) and current() comes from Redux Tool Kit.  
 
 
-
+Redux Dev Tools:  
+Redux Dev Tool extension helps greatly with Debugging Redux code. Helps to simulate user actions.  
 
 
