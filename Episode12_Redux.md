@@ -62,6 +62,30 @@ Using the Selector Hook. React-redux gives us a Selector Hook to Subscribe to th
 
 
 
+MISTAKES WE MAKE IN A REDUX STORE:  
+<br/>
+
+1. ALWAYS NAKE SURE TO SUBSCRIBE TO THE CORRECT PORTION OF THE STORE. IF NOT DONE CORRECTLY WILL LEAD TO BIG PERFORMANCE ISSUES.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b40ffdf9-ff4a-4f0b-b86b-fea41299f3b2)  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/98612db8-6640-49b3-892f-aeaa6ceacff0)  
+
+1st and 2nd image works the same. But in the first one we've only subscribed to the Cart slice of the Store.  
+And in the second one we've subscribed to the whole Store and from that we've extracted the cart slice. So, now when anything changes in the Store, the Cart component will also get affected. Let's say a User logged in, so the default user name Slice gets affected and since we've subscribed to the whole store in Cart, the Store in Cart component also gets the update which is unnecessary. NEVER DO THIS.  
+
+
+2. Difference between Reducer and Reducers.
+  A Store always has one BIG REDUCER for the WHOLE APP and within that it will have multiple small Reducers of different Slices. So, here the keyword is REDUCER.  
+   ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/a8d03c64-64bb-4f49-a36e-8f28382599bf)  
+
+  When we write it in a Slice, we create multiple REDUCERS. Keyword here is REDUCERS.  
+   ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c0b3f7fa-c668-4a6b-bff8-7a5c5593da8d)  
+   
+  And when exporting Reducers from a Slice, we export A Reducer which is a combination of Small Reducer functions which means it is ONE Reducer for that Slice. 
+  [Image of exporting Reducer from Cart slice]  
+   ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/dad88a4d-b5cf-49c1-99cb-728836fff4aa)  
+
 
 
 
