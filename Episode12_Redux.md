@@ -82,8 +82,8 @@ And in the second one we've subscribed to the whole Store and from that we've ex
   When we write it in a Slice, we create multiple REDUCERS. Keyword here is REDUCERS.  
    ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/c0b3f7fa-c668-4a6b-bff8-7a5c5593da8d)  
    
-  And when exporting Reducers from a Slice, we export A Reducer which is a combination of Small Reducer functions which means it is ONE Reducer for that Slice. 
-  [Image of exporting Reducer from Cart slice]  
+  And when exporting Reducers from a Slice, we export A Reducer which is a combination of Small Reducer functions which means it is ONE Reducer for that Slice.  
+  [Image of exporting Reducer from Cart slice]   
    ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/dad88a4d-b5cf-49c1-99cb-728836fff4aa)  
 
 
