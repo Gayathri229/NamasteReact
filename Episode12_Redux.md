@@ -77,14 +77,14 @@ So, now when we click on any add button, pizza gets added in the Cart. When Add 
 MISTAKES WE MAKE IN A REDUX STORE:  
 <br/>
 
-1. ALWAYS NAKE SURE TO SUBSCRIBE TO THE CORRECT PORTION OF THE STORE. IF NOT DONE CORRECTLY WILL LEAD TO BIG PERFORMANCE ISSUES.  
+1. ALWAYS NAKE SURE TO SUBSCRIBE TO THE CORRECT PORTION OF THE STORE. IF NOT DONE CORRECTLY WILL LEAD TO BIG PERFORMANCE LOSS.  
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/b40ffdf9-ff4a-4f0b-b86b-fea41299f3b2)  
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/98612db8-6640-49b3-892f-aeaa6ceacff0)  
 
 1st and 2nd image works the same. But in the first one we've only subscribed to the Cart slice of the Store.  
-And in the second one we've subscribed to the whole Store and from that we've extracted the cart slice. So, now when anything changes in the Store, the Cart component will also get affected. Let's say a User logged in, so the default user name Slice gets affected and since we've subscribed to the whole store in Cart, the Store in Cart component also gets the update which is unnecessary. NEVER DO THIS.  
+And in the second one we've subscribed to the whole Store and from that we've extracted the cart slice. So, now when anything changes in the Store, the Cart component will also get affected. Let's say a User logged in, so the default user name Slice gets affected and since we've subscribed to the whole store in Cart, the Store in Cart component also gets the update which is unnecessary. NEVER DO THIS. IT IS INEFFICIENT.  
 
 
 2. Difference between Reducer and Reducers.
