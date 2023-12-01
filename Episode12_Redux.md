@@ -108,8 +108,13 @@ And in the second one we've subscribed to the whole Store and from that we've ex
    Behind the scenes, Redux is still creating a Immutable state and works the same as Older Redux, but doesn't ask the Dev to do it. Redux uses the "Immer" library to do this. It finds the difference between the Original State and the Mutated state and gives a new State/new copy of the State that is Immutable.  
 
    
-5. Why state = [] doesn't work?  
-   
+4. Why state = [] doesn't work? [In Swiggy project this was used for clearCart]  
+   If we directly assign state = [], we are not actually mutating the State, it's just adding a reference to it. For better understanding, let's take that State inside clearCart reducer function is a local variable. Original State(i.e. State with cart items) will be passed here, so if we make that state as empty array only the local state will be changed and not the Original State. For Demo, if we add items in the cart and clear the cart with below code, it prints the array as empty but doesn't actually clear the cart.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/94cfd0cd-534b-468b-b80c-4ba1d65d88a8)  
+
+
+   NOTE: If we want to console log the State/anything in a reducer function, it just prints a Proxy Object and not the Data we want. We should use current(state) and current() comes from Redux Tool Kit.  
 
 
 
