@@ -58,7 +58,19 @@ Now, we add the Slice to the Store. The store also has a reducer which is respon
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/8a24ed0f-3046-4cee-be01-4c42cd5f9e21)  
 
 How will we Read those values from the Store(Cart Slice)?  
-Using the Selector Hook. React-redux gives us a Selector Hook to Subscribe to the Store. It also helps to identify what portion of the Store we need.  
+Using the Selector Hook. React-redux gives us a Selector Hook to Subscribe to the Store. It also helps to identify what portion of the Store we need. In useSelector hook we can directly access the store, as Redux provides support for it. 
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/faa5a78d-9e27-4b6d-a65e-65384c8fda86)
+
+Now, let's move to adding the items to the cart when user clicks on add button, 
+When user clicks on the ADD button, we need to dispatch an action. React-redux provides useDispatch hook for this. And we use the actions we created in the Slice and pass the item as a payload(Refer the below image). So, when we create a payload, Redux creates an Object out of it (something like {payload: "pizza"}). So the action.payload we used in the Cart Slice addItem Action will be Pizza here. And the argument order doesn't matter here as Redux takes care of it in the background.  
+
+Behind the Scenes:  
+So, now when we click on any add button, pizza gets added in the Cart. When Add button is clicked, addItem action is dispatched with Pizza, item is getting pushed in the Cart through reducer function and Slice in the store gets modified. And since we've subscribed to the store using Selector in Header, Cart gets updated with the item count.  
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/fb0cc8b8-eeab-4841-9a21-e826f957ab30)  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/6a1c0151-efd3-4f61-a547-250522f235b0)
+
 
 
 
