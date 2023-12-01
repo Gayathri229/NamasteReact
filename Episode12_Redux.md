@@ -113,6 +113,10 @@ And in the second one we've subscribed to the whole Store and from that we've ex
 
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/94cfd0cd-534b-468b-b80c-4ba1d65d88a8)  
 
+So, we can either mutate the existing state or return an empty array (which is a new State), and this new State will replace the existing State.  
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/19b8eef4-60f7-4078-ac64-8f5a7569b9eb)
+
+
 
    NOTE: If we want to console log the State/anything in a reducer function, it just prints a Proxy Object and not the Data we want. We should use current(state) and current() comes from Redux Tool Kit.  
 
