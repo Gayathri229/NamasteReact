@@ -99,7 +99,16 @@ And in the second one we've subscribed to the whole Store and from that we've ex
    ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/dad88a4d-b5cf-49c1-99cb-728836fff4aa)  
 
 
-3. Why state = [] doesn't work?
+3. Vanilla Redux vs Redux Tool kit:  
+   In Vanilla(Older) Redux State was not mutable i.e. can't change/modify state directly. A copy of the state variable(newState) was created and then newState was changed. Returning State is mandatory.  
+   [Older way of mutating state]  
+   ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ccbc6204-3f37-459c-940b-1e6593b37827)  
+
+   In Redux Took Kit, we HAVE to MUTATE the state which makes it impure function. Returning State is not mandatory. Redux takes care of it automatically.  
+   Behind the scenes, Redux is still creating a Immutable state and works the same as Older Redux, but doesn't ask the Dev to do it. Redux uses the "Immer" library to do this. It finds the difference between the Original State and the Mutated state and gives a new State/new copy of the State that is Immutable.  
+
+   
+5. Why state = [] doesn't work?  
    
 
 
