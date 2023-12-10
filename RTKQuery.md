@@ -17,3 +17,6 @@ In the createAPI function,
 Below is the image of how we used the API data to display in Contact Us page
 ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/209672af-a365-4000-b6d1-011f3bb41693)
 
+
+
+"Thunk" in Redux Toolkit Query:  
