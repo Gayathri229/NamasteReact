@@ -24,5 +24,13 @@ We know that Parcel uses Babel behind the scenes and has its own configuration f
 - Configure Babel. We used configuration lines from here (https://jestjs.io/docs/getting-started) for this step.  
 - Configure Parcel Config file to disable default Babel transpilation. We used the configuration from here (https://parceljs.org/languages/javascript/#usage-with-other-tools) for this step.
 - Jest Configuration (npx jest --init)
-- Install JSDom 
-  
+- Install JSDom
+- Install @babel/preset-react (When we try to any JSX in JSDom, there is no support for it. This package is needed for that)
+- Include @babel/preset-react in babel config (Preset? -> Babel preset helps testing library to convert JSX to HTML, so that it can read properly)
+- Install @testing-library/jest-dom (to use toBeInTheDocument() kind of assertions)
+
+
+  When we try to console log the queried elements, it returns a JSX Element which is nothing but an Object/React Element/Virtual DOM. 
+
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ce91396c-de34-45f7-a891-064b9ae42bbc)
+
