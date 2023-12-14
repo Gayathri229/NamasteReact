@@ -32,5 +32,9 @@ We know that Parcel uses Babel behind the scenes and has its own configuration f
 
   When we try to console log the queried elements, it returns a JSX Element which is nothing but an Object/React Element/Virtual DOM. 
 
-![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ce91396c-de34-45f7-a891-064b9ae42bbc)
+![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/ce91396c-de34-45f7-a891-064b9ae42bbc)  
+
+
+As we keep writing test cases, it keeps getting big. So, we can group some test cases into one using describe().  
+it() can be used instead of test() as well for test cases.  
 
