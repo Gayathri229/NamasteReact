@@ -7,4 +7,8 @@
    Enzyme is a testing library which is useful specifically for unit testing React components. It is often paired with Jest.  
 
 3. Enzyme vs React Testing Library
+   React Testing Library:
+   - Emphasizes user interactions and behaviour
+   - Encourages writing tests that mimic user behaviour 
+   
    
