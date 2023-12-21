@@ -6,7 +6,7 @@
 2. What is enzyme?  
    Enzyme is a testing library which is useful specifically for unit testing React components. Enzyme allows developers to shallow render react components, traverse and manipulate the rendered output and make assertions about the component's behaviour. It provides a range of utility functions that simulate user interactions such as clicking buttons or changing input values and check the resulting changes in the component's state or output.  
 
-3. Enzyme vs React Testing Library
+3. Enzyme vs React Testing Library  
    React Testing Library:
    - Emphasizes user interactions and behaviour
    - Doesn't support shallow rendering. Encourages simulating real application
