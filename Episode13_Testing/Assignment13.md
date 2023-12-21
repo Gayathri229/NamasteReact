@@ -21,7 +21,7 @@
   - Returns a wrapper object around the component, providing a set of methods for interacting with the component, querying the DOM and simulating events
 
 
-4. What is Jest and why do we use it?
+4. What is Jest and why do we use it?  
    Jest is a testing library used for testing React applications. It is used because  
    - Zero configuration
    - Includes its own assertion library
