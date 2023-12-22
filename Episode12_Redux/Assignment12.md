@@ -34,6 +34,9 @@
       .addCase(someOtherAction, (state, action) => { /* ... */ })  
       .addDefaultCase((state, action) => { /* ... */ });  
   },  
+
+  ![image](https://github.com/Gayathri229/NamasteReact/assets/60467364/9265f6b7-423c-4885-9900-85836dca8191)
+
 <br/>
 The createSlice function returns an object that includes the generated reducer function and action creators. 
    
