@@ -22,9 +22,11 @@
 
 7. Explain createSlice and the configuration it takes.  
    createSlice is a utility function provided by Redux Toolkit that simplifies the process of defining Redux reducers and actions.  
-   We give the name of the Slice and its initial state if any.
-   Reducers, where keys are Actions and values, are functions.
-   extraReducers (builder function): The extraReducers option is a function that takes a builder object as its argument. This object provides methods for adding additional reducers. These reducers can handle actions from other slices or async actions. The addCase method is used to add reducers for specific action types, and addDefaultCase is used to handle any other actions.
+   We give the name of the Slice and its initial state if any.  
+   Reducers, where keys are Actions and values, are functions.  
+   extraReducers (builder function): The extraReducers option is a function that takes a builder object as its argument. This object provides methods for adding additional reducers. These reducers can handle actions from other slices or async actions. The addCase method is used to add reducers for specific action types, and addDefaultCase is used to handle any other actions.  
+
+<br/>
 
    extraReducers: (builder) => {
     // Additional reducers for handling actions from other slices or async actions
@@ -32,6 +34,6 @@
       .addCase(someOtherAction, (state, action) => { /* ... */ })
       .addDefaultCase((state, action) => { /* ... */ });
   },
-
+<br/>
 The createSlice function returns an object that includes the generated reducer function and action creators. 
    
