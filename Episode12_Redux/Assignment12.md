@@ -28,12 +28,12 @@
 
 <br/>
 
-   extraReducers: (builder) => {
-    // Additional reducers for handling actions from other slices or async actions
-    builder
-      .addCase(someOtherAction, (state, action) => { /* ... */ })
-      .addDefaultCase((state, action) => { /* ... */ });
-  },
+   extraReducers: (builder) => {  
+    // Additional reducers for handling actions from other slices or async actions  
+    builder  
+      .addCase(someOtherAction, (state, action) => { /* ... */ })  
+      .addDefaultCase((state, action) => { /* ... */ });  
+  },  
 <br/>
 The createSlice function returns an object that includes the generated reducer function and action creators. 
    
