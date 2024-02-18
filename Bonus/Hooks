@@ -4,5 +4,7 @@ useParams - Given by React router.
 useMemo():  
 https://react.dev/reference/react/useMemo  
 
+PS: It caches only the last computed value, until the dependant value doesn't change. DOESN'T cache anything more than the LAST COMPUTED VALUE.  
+
 Increases performance of app.
 [Refer Demo.js file from YouTube clone project]
