@@ -1,1 +1,8 @@
+useParams, useContext - not core react Hooks.
+useParams - Given by React router.
 
+useMemo():  
+https://react.dev/reference/react/useMemo  
+
+Increases performance of app.
+[Refer Demo.js file from YouTube clone project]
