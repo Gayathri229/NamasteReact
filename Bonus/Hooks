@@ -23,9 +23,10 @@ A local variable, say a "let" variable doesn't trigger a re-render in our compon
 reflect in UI as a let variable doesn't trigger a re-render.  
 Now, That is why, we use a state variable where it increases the value and triggers a re-render as well.  
 Now, if we try to increase the value of X (let variable), after incrementing the State variable, it again starts from 0. This is because X gets refreshed after each re-render. A re-render means, the component   
-i.e. the function is displayed again, which means its getting called again, a new execution context is created, a new memory space is created, new thread of execution is created and the thread is pushed into call  
-stack.  
+i.e. the function is displayed again, which means its getting called again, a new execution context is created, a new memory space is created, new thread of execution is created and the thread is pushed into  
+call stack.  
 
 Ref variable:  
-So, a Ref variable is like a Let variable, where a re-render won't be triggered if its value is changed, BUT the value won't get resetted after a re-render. It will remember the value and display it when a  
-component re-render occurs.
+So, a Ref variable is like a Let variable, where a re-render won't be triggered if its value is changed, BUT the value won't get RESET after a re-render. It will remember the value and display it when a  
+component re-render occurs (due to some other reasons like, let's say the value of State variable changed or useEffect dependency value changed) and then we'll be able to see the updated value of Ref on Screen.  
+This means the value persists between re-renders.  
