@@ -29,4 +29,8 @@ call stack.
 Ref variable:  
 So, a Ref variable is like a Let variable, where a re-render won't be triggered if its value is changed, BUT the value won't get RESET after a re-render. It will remember the value and display it when a  
 component re-render occurs (due to some other reasons like, let's say the value of State variable changed or useEffect dependency value changed) and then we'll be able to see the updated value of Ref on Screen.  
-This means the value persists between re-renders.  
+This means the value persists between re-renders i.e. React tracks the useRef value.  
+Ref is not a normal value. It's an Object which React gives you. We can access/update Ref's value directly using its "current" property i.e ref.current.  
+
+![Screenshot 2024-02-19 185652](https://github.com/Gayathri229/NamasteReact/assets/60467364/be227886-726a-4d9d-a846-888f6c38f2ec)
+
