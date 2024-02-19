@@ -8,3 +8,24 @@ PS: It caches only the last computed value, until the dependant value doesn't ch
 
 Increases performance of app.
 [Refer Demo.js file from YouTube clone project]
+
+
+useRef() Hook:  
+
+Why do we need this hook?   
+When you have a value in your component for which you dont want the component to re-render.  
+
+  
+Refer Demo2 component example in YT project for the below explanation:  
+
+
+A local variable, say a "let" variable doesn't trigger a re-render in our component. If we have a button which increases its value, each time we click the button, value gets increased in the back, but doesn't  
+reflect in UI as a let variable doesn't trigger a re-render.  
+Now, That is why, we use a state variable where it increases the value and triggers a re-render as well.  
+Now, if we try to increase the value of X (let variable), after incrementing the State variable, it again starts from 0. This is because X gets refreshed after each re-render. A re-render means, the component   
+i.e. the function is displayed again, which means its getting called again, a new execution context is created, a new memory space is created, new thread of execution is created and the thread is pushed into call  
+stack.  
+
+Ref variable:  
+So, a Ref variable is like a Let variable, where a re-render won't be triggered if its value is changed, BUT the value won't get resetted after a re-render. It will remember the value and display it when a  
+component re-render occurs.
